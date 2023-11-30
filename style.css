@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+    height: inherit;
+    color: white;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .middle-line {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        /* Certifique-se de que a linha esteja acima de outros elementos, se necessário */
+    }
+}
+
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+}
+
+#below-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3em 0 1em 0;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button {
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.button-navigate {
+    font-size: 3em;
+}
+
+.button-biggest {
+    font-size: 5em;
+}
+
+#cover {
+    border-radius: 20%;
+    width: 450px;
+}
+
+#playlist-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0em 2em 0em;
+}
+
+#song-name {
+    font-size: 1.5em;
+    font-weight: 700; /* Use numerical value for font-weight */
+}
+
+.ligth-color {
+    color: rgb(111, 71, 133);
+}
+
+#progress-bar {
+    background-color: rgb(111, 71, 133);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#currentprogress {
+    --progress: 0%;
+    background-color: white;
+    height: 3px; /* Adjusted height for clarity */
+    width: var(--progress);
+    border-radius: inherit;
+}
+
+#progresscontainer {
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+.buttonactive {
+    color: green;
+}
